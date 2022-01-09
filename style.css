@@ -44,4 +44,74 @@ body {
   animation: spin 3s linear infinite;
 }
 
+.menu {
+  background-color: #f6f6f6;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.menu h2 {
+  margin-top: 0px;
+}
+.menu p {
+  margin-top: 25px;
+  margin-bottom: 30px;
+  color: #353535;
+}
+.menu .btn {
+  background: linear-gradient(#eb72da, #a25bdc);
+  color: #fff;
+  text-decoration: none;
+  padding: 20px;
+  border-radius: 50px;
+  display: inline-block;
+}
+
+.fonctionnement {
+  margin-left: 21px;
+  margin-top: 50px;
+}
+
+.nbr-etapes .etapes .nbr .i {
+  margin-left: 21px;
+  color: #9356dc;
+}
+.nbr-etapes .etapes .nbr .btn {
+  text-align: center;
+  margin-left: 45px;
+  margin-right: 45px;
+}
+
+.card {
+  height: 170px;
+  width: 334px;
+}
+
+.footer {
+  background-color: #353535;
+  color: #fff;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.footer .logo {
+  max-width: 100px;
+}
+.footer a {
+  color: #fff;
+  text-decoration: none;
+}
+.footer a:hover {
+  text-decoration: underline;
+}
+.footer i {
+  margin-right: 10px;
+}
+.footer i.icon-partenaire {
+  font-size: 0.7em;
+}
+
 /*# sourceMappingURL=style.css.map */
