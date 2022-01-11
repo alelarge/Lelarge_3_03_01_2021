@@ -70,21 +70,63 @@ body {
 }
 
 .fonctionnement {
-  margin-left: 21px;
+  margin-left: 20px;
+  margin-right: 20px;
   margin-top: 50px;
 }
 
-.nbr-etapes .etapes .nbr .i {
+.nbr-etapes {
+  list-style: none;
+  padding-left: 0px;
+}
+.nbr-etapes .etape {
+  background-color: #f6f6f6;
+  margin-bottom: 20px;
+  padding: 30px;
+  border-radius: 25px;
+  position: relative;
+  box-shadow: 0px 5px 14px #00000026;
+}
+.nbr-etapes .etape .nombre {
+  position: absolute;
+  background-color: #9356dc;
+  border-radius: 100%;
+  color: #fff;
+  text-align: center;
+  height: 25px;
+  width: 25px;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  left: -11px;
+  top: 27px;
+}
+.nbr-etapes .etape .i {
   margin-left: 21px;
   color: #9356dc;
 }
-.nbr-etapes .etapes .nbr .btn {
-  text-align: center;
-  margin-left: 45px;
-  margin-right: 45px;
-}
 
-.card {
+.restaurants {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 50px;
+  background-color: #f6f6f6;
+}
+.restaurants .cards .card {
+  background-color: #fff;
+  margin-bottom: 20px;
+  border-radius: 25px;
+}
+.restaurants .cards .card .photo-restaurant {
+  width: 100%;
+  object-fit: cover;
+}
+.restaurants .cards .card .nom-restaurant {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.restaurants img {
   height: 170px;
   width: 334px;
 }
