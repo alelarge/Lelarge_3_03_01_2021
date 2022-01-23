@@ -6,6 +6,10 @@
   width: 100%;
   object-fit: cover;
   height: 250px;
+
+  @media screen and (min-width: 1300px) {
+    height: 400px;
+  }
 }
 
 .carte-restaurant {
@@ -38,62 +42,96 @@
     }
   }
 
-  .toutes_les_entrees {
-    h2 {
-      margin-top: 15px;
-      text-decoration-thickness: 4px;
-      text-decoration: underline #99e2d0;
-    }
-  }
+  .menu-restaurant {
+    @media screen and (min-width: 1300px) {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
 
-  .carte-item {
-    box-shadow: 0px 5px 14px #00000026;
-    background-color: #fff;
-    margin-bottom: 15px;
-    border-radius: 20px;
-    display: flex;
-    align-items: stretch;
-
-    &:hover {
-      cursor: pointer;
+      .carte-item {
+        min-width: 400px;
+      }
     }
 
-    .recette-info {
-      padding-left: 10px;
-      padding-right: 20px;
-      padding-top: 15px;
-      padding-bottom: 15px;
-      width: 100%;
+    .toutes_les_entrees div:nth-child(2),
+    .tous_les_plats div:nth-child(2),
+    .tous_les_desserts div:nth-child(2) {
+      animation-delay: 0.1s;
+    }
+    .toutes_les_entrees div:nth-child(3),
+    .tous_les_plats div:nth-child(3),
+    .tous_les_desserts div:nth-child(3) {
+      animation-delay: 0.2s;
+    }
+    .toutes_les_entrees div:nth-child(4),
+    .tous_les_plats div:nth-child(4),
+    .tous_les_desserts div:nth-child(4) {
+      animation-delay: 0.3s;
+    }
 
-      h3 {
-        margin-top: 0px;
-        margin-bottom: 10px;
-        font-weight: bold;
+    .toutes_les_entrees {
+      h2 {
+        margin-top: 15px;
+        text-decoration-thickness: 4px;
+        text-decoration: underline #99e2d0;
+      }
+    }
+
+    .carte-item {
+      box-shadow: 0px 5px 14px #00000026;
+      background-color: #fff;
+      margin-bottom: 15px;
+      border-radius: 20px;
+      display: flex;
+      align-items: stretch;
+
+      &:hover {
+        cursor: pointer;
       }
 
-      .subtitle {
-        margin: 0px;
-        position: relative;
+      .recette-info {
+        padding-left: 10px;
+        padding-right: 40px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        width: 100%;
 
-        .price {
+        h3 {
+          margin-top: 0px;
+          margin-bottom: 10px;
           font-weight: bold;
-          right: 0px;
-          position: absolute;
+        }
+
+        .subtitle {
+          margin: 0px;
+          position: relative;
+
+          .price {
+            font-weight: bold;
+            right: -30px;
+            position: absolute;
+          }
         }
       }
-    }
 
-    .recette-check {
-      padding-top: 35px;
-      border-top-right-radius: 20px;
-      border-bottom-right-radius: 20px;
-      background: #99e2d0;
-      color: #fff;
-      vertical-align: middle;
-      flex-grow: 0;
-      flex-shrink: 0;
-      flex-basis: 60px;
-      text-align: center;
+      .recette-check {
+        padding-top: 35px;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        background: #99e2d0;
+        color: #fff;
+        vertical-align: middle;
+        flex-grow: 0;
+        flex-shrink: 0;
+        flex-basis: 60px;
+        text-align: center;
+        animation-delay: 250ms;
+
+        &:hover {
+          background: #d4e4e0;
+          transition: 0.3s linear;
+        }
+      }
     }
   }
 

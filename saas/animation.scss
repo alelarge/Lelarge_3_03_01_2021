@@ -1,7 +1,3 @@
-/**
- GENERAL
-**/
-
 .loading-container {
   position: fixed;
   background: #fff;
@@ -12,7 +8,8 @@
   align-items: center;
   justify-content: center;
   display: flex;
-  animation: fadeOut 3s linear forwards;
+  animation: fadeOut 3s;
+  animation-fill-mode: forwards;
   .loading {
     color: #9356dc;
     perspective: 1000px;
@@ -45,8 +42,10 @@
   }
   99% {
     opacity: 0;
+    height: 100%;
   }
   100% {
+    opacity: 0;
     height: 0px;
   }
 }
@@ -58,4 +57,26 @@
   70% {
     transform: rotateX(0);
   }
+}
+
+/**
+ Boutons
+**/
+@keyframes fadeInUp {
+  from {
+    transform: translate3d(0, 40px, 0);
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+.fade-in-up {
+  animation-duration: 1s;
+
+  animation-fill-mode: both;
+  opacity: 0;
+  animation-name: fadeInUp;
 }

@@ -24,12 +24,19 @@ main {
   margin-left: auto;
   display: block;
   max-width: 80px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.27);
+}
+.btn_cta:hover {
+  background: linear-gradient(rgba(240, 116, 218, 0.8), rgba(175, 95, 220, 0.8));
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.6);
+  transition: 0.3s ease-out;
 }
 
 .icon__header {
   position: absolute;
-  top: 25px;
+  top: 26px;
   left: 25px;
+  z-index: 1;
 }
 
 .main-header {
@@ -41,14 +48,6 @@ main {
   text-align: center;
   padding-top: 20px;
   padding-bottom: 15px;
-}
-
-.loader {
-  border: 16px solid #ff79da;
-  height: 100%;
-  width: 100%;
-  font-family: Shrikhand;
-  border-top: 16px solid #9356dc;
 }
 
 .localisation {
@@ -69,17 +68,6 @@ main {
   left: -15px;
   color: #353535;
   font-size: 1.2em;
-}
-
-.loader {
-  border: 16em solid #ff79da;
-  border-radius: 50%;
-  height: 100%;
-  width: 100%;
-  font-family: Shrikhand;
-  border-top: 16em solid #9356dc;
-  -webkit-animation: spin 2s linear infinite;
-  animation: spin 3s linear infinite;
 }
 
 .menu {
@@ -105,6 +93,12 @@ main {
   padding: 20px;
   border-radius: 50px;
   display: inline-block;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.27);
+}
+.menu .btn:hover {
+  background: linear-gradient(rgba(240, 116, 218, 0.8), rgba(175, 95, 220, 0.8));
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.6);
+  transition: 0.3s ease-out;
 }
 
 .fonctionnement {

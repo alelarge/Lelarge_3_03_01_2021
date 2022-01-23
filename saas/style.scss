@@ -1,67 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 
-/**
- GENERAL
-**/
-
-.loading-container {
-  position: fixed;
-  background: #fff;
-  height: 100%;
-  width: 100%;
-  z-index: 1;
-  top: 0;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  animation: fadeOut 3s linear forwards;
-  .loading {
-    color: #9356dc;
-    perspective: 1000px;
-    font-size: 84px;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 800;
-    text-align: center;
-    span {
-      display: inline-block;
-      margin: 0 -0.05em;
-      transform-origin: 50% 50% -25px;
-      transform-style: preserve-3d;
-      animation: loading 1.6s infinite;
-      @for $i from 1 through 6 {
-        &:nth-child(#{$i + 1}) {
-          animation-delay: #{$i * 0.1}s;
-        }
-      }
-    }
-
-    @media screen and (max-width: 720px) {
-      display: inline-grid;
-    }
-  }
-}
-
-@keyframes fadeOut {
-  0% {
-    opacity: 1;
-  }
-  99% {
-    opacity: 0;
-  }
-  100% {
-    height: 0px;
-  }
-}
-
-@keyframes loading {
-  0% {
-    transform: rotateX(-360deg);
-  }
-  70% {
-    transform: rotateX(0);
-  }
-}
-
 body {
   font-family: Roboto;
   font-size: 1em;
@@ -86,12 +24,20 @@ main {
   margin-left: auto;
   display: block;
   max-width: 80px;
+  box-shadow: 0px 4px 20px rgb(0 0 0 / 27%);
+
+  &:hover {
+    background: linear-gradient(rgb(240 116 218 / 80%), rgb(175 95 220 / 80%));
+    box-shadow: 0px 4px 20px rgb(0 0 0 / 60%);
+    transition: 0.3s ease-out;
+  }
 }
 
 .icon__header {
   position: absolute;
-  top: 25px;
+  top: 26px;
   left: 25px;
+  z-index: 1;
 }
 
 .main-header {
@@ -104,14 +50,6 @@ main {
     padding-top: 20px;
     padding-bottom: 15px;
   }
-}
-
-.loader {
-  border: 16px solid #ff79da;
-  height: 100%;
-  width: 100%;
-  font-family: Shrikhand;
-  border-top: 16px solid #9356dc;
 }
 
 .localisation {
@@ -134,17 +72,6 @@ main {
     color: #353535;
     font-size: 1.2em;
   }
-}
-
-.loader {
-  border: 16em solid #ff79da;
-  border-radius: 50%;
-  height: 100%;
-  width: 100%;
-  font-family: Shrikhand;
-  border-top: 16em solid #9356dc;
-  -webkit-animation: spin 2s linear infinite;
-  animation: spin 3s linear infinite;
 }
 
 .menu {
@@ -172,6 +99,15 @@ main {
     padding: 20px;
     border-radius: 50px;
     display: inline-block;
+    box-shadow: 0px 4px 20px rgb(0 0 0 / 27%);
+    &:hover {
+      background: linear-gradient(
+        rgb(240 116 218 / 80%),
+        rgb(175 95 220 / 80%)
+      );
+      box-shadow: 0px 4px 20px rgb(0 0 0 / 60%);
+      transition: 0.3s ease-out;
+    }
   }
 }
 
