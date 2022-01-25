@@ -8,7 +8,7 @@
   align-items: center;
   justify-content: center;
   display: flex;
-  animation: fadeOut 3s;
+  animation: fadeOut 1s;
   animation-fill-mode: forwards;
   .loading {
     color: #9356dc;
@@ -79,4 +79,13 @@
   animation-fill-mode: both;
   opacity: 0;
   animation-name: fadeInUp;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
 }

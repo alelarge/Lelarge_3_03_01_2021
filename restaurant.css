@@ -31,11 +31,11 @@
   position: absolute;
   right: 25px;
   top: 70px;
-  cursor: pointer;
-  font-size: 1.4em;
 }
 .carte-restaurant header .like__icon.like__icon--bg {
-  display: none;
+  position: absolute;
+  right: 26px;
+  top: 72px;
 }
 @media screen and (min-width: 1300px) {
   .carte-restaurant .menu-restaurant {
@@ -64,8 +64,6 @@
 }
 .carte-restaurant .menu-restaurant .toutes_les_entrees h2 {
   margin-top: 15px;
-  text-decoration-thickness: 4px;
-  text-decoration: underline #99e2d0;
 }
 .carte-restaurant .menu-restaurant .carte-item {
   box-shadow: 0px 5px 14px #00000026;
@@ -74,9 +72,16 @@
   border-radius: 20px;
   display: flex;
   align-items: stretch;
+  overflow: hidden;
 }
 .carte-restaurant .menu-restaurant .carte-item:hover {
   cursor: pointer;
+}
+.carte-restaurant .menu-restaurant .carte-item:hover .recette-check {
+  width: 70px;
+}
+.carte-restaurant .menu-restaurant .carte-item:hover .recette-check .fa-check-circle {
+  transform: rotate(0deg);
 }
 .carte-restaurant .menu-restaurant .carte-item .recette-info {
   padding-left: 10px;
@@ -108,13 +113,14 @@
   vertical-align: middle;
   flex-grow: 0;
   flex-shrink: 0;
-  flex-basis: 60px;
+  width: 0px;
+  transition: 0.5s ease;
   text-align: center;
   animation-delay: 250ms;
 }
-.carte-restaurant .menu-restaurant .carte-item .recette-check:hover {
-  background: #d4e4e0;
-  transition: 0.3s linear;
+.carte-restaurant .menu-restaurant .carte-item .recette-check .fa-check-circle {
+  transform: rotate(360deg);
+  transition: 0.5s ease;
 }
 .carte-restaurant .btn_cta {
   margin-top: 50px;

@@ -178,15 +178,15 @@ main {
   text-decoration: none;
   color: #000;
 }
-.restaurants .cards .card .like__icon {
+.restaurants .cards .card .like .like__icon {
   position: absolute;
   right: 25px;
   bottom: 35px;
-  cursor: pointer;
-  font-size: 1.4em;
 }
-.restaurants .cards .card .like__icon.like__icon--bg {
-  display: none;
+.restaurants .cards .card .like .like__icon.like__icon--bg {
+  position: absolute;
+  right: 26px;
+  bottom: 36px;
 }
 .restaurants .cards .card section.carte {
   position: relative;
@@ -252,6 +252,35 @@ footer i {
 }
 footer i.icon-partenaire {
   font-size: 0.7em;
+}
+
+.like:hover .like__icon.like__icon--bg {
+  opacity: 1;
+  animation: gradient 0.5s ease forwards;
+}
+.like .like__icon {
+  cursor: pointer;
+  font-size: 1.5em;
+  opacity: 1;
+}
+.like .like__icon.like__icon--bg {
+  opacity: 0;
+  font-size: 1.37em;
+  background-color: #eb72da;
+  background-image: linear-gradient(45deg, #fff, #fff, #fff, #a25bdc, #eb72da);
+  background-size: 500% 500%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+.underline {
+  background-color: #99e2d0;
+  display: block;
+  height: 4px;
+  position: relative;
+  width: 40px;
 }
 
 /*# sourceMappingURL=style.css.map */
