@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
-
 body {
   font-family: Roboto;
   font-size: 1em;
@@ -12,7 +10,7 @@ main {
 }
 
 .btn_cta {
-  background: linear-gradient(#f074da, #af5fdc);
+  background: linear-gradient($secondary-color, $primary-color);
   text-decoration: none;
   color: #fff;
   padding-right: 40px;
@@ -93,7 +91,7 @@ main {
   }
 
   .btn {
-    background: linear-gradient(#eb72da, #a25bdc);
+    background: linear-gradient($secondary-color, $primary-color);
     color: #fff;
     text-decoration: none;
     padding: 20px;
@@ -101,10 +99,7 @@ main {
     display: inline-block;
     box-shadow: 0px 4px 20px rgb(0 0 0 / 27%);
     &:hover {
-      background: linear-gradient(
-        rgb(240 116 218 / 80%),
-        rgb(175 95 220 / 80%)
-      );
+      background: linear-gradient($light-secondary-color, $light-primary-color);
       box-shadow: 0px 4px 20px rgb(0 0 0 / 60%);
       transition: 0.3s ease-out;
     }
@@ -139,7 +134,7 @@ main {
 
     .nombre {
       position: absolute;
-      background-color: #9356dc;
+      background-color: $primary-color;
       border-radius: 100%;
       color: #fff;
       text-align: center;
@@ -154,7 +149,7 @@ main {
     }
     .i {
       margin-left: 21px;
-      color: #9356dc;
+      color: $primary-color;
     }
   }
 }
@@ -225,8 +220,8 @@ main {
       }
 
       .tag-nouveau {
-        background-color: #99e2d0;
-        color: #008766;
+        background-color: $tertiary-color;
+        color: $darker-tertiary-color;
         position: absolute;
         text-align: center;
         top: 10px;
@@ -313,14 +308,14 @@ footer {
     &.like__icon--bg {
       opacity: 0;
       font-size: 1.37em;
-      background-color: #eb72da;
+      background-color: $secondary-color;
       background-image: linear-gradient(
         45deg,
         #fff,
         #fff,
         #fff,
-        #a25bdc,
-        #eb72da
+        $primary-color,
+        $secondary-color
       );
       background-size: 500% 500%;
       -webkit-background-clip: text;
@@ -332,7 +327,7 @@ footer {
 }
 
 .underline {
-  background-color: #99e2d0;
+  background-color: $tertiary-color;
   display: block;
   height: 4px;
   position: relative;
