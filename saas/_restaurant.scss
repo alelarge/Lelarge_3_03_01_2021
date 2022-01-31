@@ -107,11 +107,18 @@
           margin-top: 0px;
           margin-bottom: 10px;
           font-weight: bold;
+          padding-right: 10px;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          white-space: nowrap;
         }
 
         .subtitle {
           margin: 0px;
           position: relative;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          white-space: nowrap;
 
           .price {
             font-weight: bold;
