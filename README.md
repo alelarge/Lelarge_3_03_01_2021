@@ -1,55 +1,38 @@
 # Lelarge_3_03_01_2021
 
 sudo ./dart-sass/sass saas/style.scss style.css
-sudo ./dart-sass/sass saas/style.scss style.css --watch
+sudo ./dart-sass/sass saas/global.scss:style.css --watch
 
-style.css.map permettre au navigateur la correspondante entre ligne css et une ligne scss voir les erreurs dasn le fichier source et pas dans le dossier compilé
+Structure HTML:
 
-Imbrication scss : niveau de profondeur de 2 pour la lisibilité, sinon plus plus difficile à lire
+L'élément <article> représente une composition autonome dans un document, une page, une application ou un site, destinée à être distribuée ou réutilisée de manière indépendante
 
-ex:
-.table {
-width: 100%;
+CSS:
 
-    td{
-        border : 1px #FFF;
-    }
+- La propriété z-index définit le « z-order » d'un élément positionné et de ses éléments enfants ou de ses éléments flexibles. Lorsque des éléments se chevauchent, le z-order détermine l'ordre des différentes couches que formeront les éléments. Généralement, un élément couvrira un autre élément si sa valeur de z-index est supérieure à celle du deuxième élément.
+  https://developer.mozilla.org/fr/docs/Web/CSS/z-index
 
-}
+- align-items : contrôle l'alignement sur l'axe secondaire
+- align-items :stretch;( par défaut ): étirer pour remplir le conteneur (toujours respecter min-width/max-width)
 
-ex : pour changer de couleur btn
+- animation-fill-mode indique la façon dont une animation CSS doit appliquer les styles à sa cible avant et après son exécution. Spécifie un style pour l'élément lorsque l'animation n'est pas en cours de lecture (avant qu'elle ne démarre, après qu'elle se termine, ou les deux)
 
-btn {
-background:rgb(99,125,255);
+- display: inline-block; s'affiche en ligne. pas de saut après la ligne
 
-    &:hover{
-        background:rgb(62,81,189);
-    }
+- display: inline-grid sur un élément, tous les enfants directs de cet élément deviennent des éléments de grille.
 
-}
+- transform-origin permet de modifier l'origine du repère pour les opérations de transformation d'un élément.
 
-On peut mettre une @media only screen and(max-width:1200px) dans l'imbrication. Mais il est préférable de grouper les media.
+- animation-fill-mode : both entraine l'animation dans les deux directions
 
-Héritage : une balise va agir comme un autre sélecteur
+- vertical-align : Aligne le milieu de l'élément avec la hauteur donnée par la ligne de base de l'élément parent à laquelle on ajoute la moitié de sa hauteur.
 
-call to action : même apparance comme un bouton
+- flex-grow définit le facteur d'expansion d'un élément flexible selon sa dimension principale. Elle indique la quantité d'espace restant que l'élément devrait consommer dans un conteneur flexible relativement à la taille des autres éléments du même conteneur.
 
-ex:
-btn {
-background:rgb(99,125,255);
+- La propriété flex-shrink définit le facteur de rétrécissement d'un élément flexible. Si la taille de l'ensemble des éléments flexibles est supérieure à la taille du conteneur, les éléments seront comprimés selon leur facteur flex-shrink.
 
-    &:hover{
-        background:rgb(62,81,189);
-    }
+- easy : effet de transition avec un début lent, puis rapide, puis se termine lentement (c'est la valeur par défaut)
 
-}
+1. Voir brief
 
-btn-danger{
-@extends .btn;
-
-    background : red;
-    &hover{
-        background:
-    }
-
-}
+2. VOir maquette
